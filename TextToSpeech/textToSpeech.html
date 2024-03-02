@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Reader</title>
+</head>
+<body>
+    <textarea name="textarea" id="textArea" cols="50" rows="10"></textarea>
+    <button type="button" id="bttn" onclick="textToSpeech()">Text Reader</button>
+    <script>
+        const textInput = document.querySelector('#textArea');
+        const myBtn = document.querySelector('#bttn');
+
+        function textToSpeech() {
+            const mssg = new SpeechSynthesisUtterance;
+            mssg.text = textInput.value;
+            mssg.voice = speechSynthesis.getVoices()[0];
+            speechSynthesis.speak(mssg);
+        };
+    </script>
+</body>
+</html>
