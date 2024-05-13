@@ -1,8 +1,16 @@
 function addTask() {
+  const inputTask = document.getElementById("inputTask").value;
+
+  if (inputTask === "") {
+    alert("Input field cannot be empty!");
+    return false;
+  }
+
   const taskList = document.getElementById("taskList");
   const newTask = document.createElement("li");
   taskList.appendChild(newTask);
-  newTask.textContent = document.getElementById("inputTask").value;
+  newTask.textContent = inputTask;
+
   document.getElementById("inputTask").value = "";
   deleteTask(newTask);
 }
