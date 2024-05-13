@@ -1,0 +1,54 @@
+body{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    color: white;
+    letter-spacing: 1.4px;
+    text-shadow: 4px 2px rgb(14, 44, 70);
+    border-bottom: 6px groove rgb(0, 80, 133);
+}
+form{
+    width: 22%;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 3px 2px;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+input{
+    background-color: rgb(14, 44, 70);
+    color: white;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+button{
+    margin-top: 12px;
+    background-color: rgb(5, 37, 65);
+    color: aliceblue;
+    padding: 6px 0px;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+}
+
+button:hover{
+    color: dodgerblue;
+    transition: ease 0.4s;
+}
