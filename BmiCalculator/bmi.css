@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(47, 136, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bmi{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 22px;
+    border-radius: 6px;
+    color: white;
+    box-shadow: rgb(26, 34, 43) 0px 20px 30px -10px;
+}
+
+.bmi h1{
+    color: cornflowerblue;
+}
+
+.calc{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc label{
+    letter-spacing: 1px;
+}
+
+.calc input{
+    width: 54%;
+    padding: 6px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    margin-left: 8px;
+    background-color: aliceblue;
+}
+
+.calc button{
+    width: 100px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calc button:hover{
+    background-color: cornflowerblue;
+    transition: ease-in;
+}
+
+#result{
+    padding: 4px;
+    border: 1px solid rgb(85, 84, 84);
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media screen {
+    
+}
