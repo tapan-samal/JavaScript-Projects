@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+  </head>
+  <body>
+    <h2>Todo App Using Prompt</h2>
+
+    <script>
+      //Add Task
+      //List Task
+      //Delete Task
+      //Quit Request
+
+      const todo = [];
+      let req = prompt("Enter your request ?");
+
+      while (true) {
+        if (req === "quit") {
+          console.log("Request quited!");
+          break;
+        }
+
+        if (req === "list") {
+          console.log("-----Todo List-----");
+          for (let i = 0; i < todo.length; i++) {
+            console.log(i, todo[i]);
+          }
+          console.log("----------");
+        } else if (req === "add") {
+          let task = prompt("Add your task ?");
+          todo.push(task);
+          console.log("Task added!");
+        } else if (req === "del") {
+          let delIndx = prompt("Please Enter task index ?");
+          todo.splice(delIndx, 1);
+          console.log("Task Deleted");
+        } else {
+          console.log("Invalid request!");
+        }
+        req = prompt("Enter your request again ?");
+      }
+    </script>
+  </body>
+</html>
