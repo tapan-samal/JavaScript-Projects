@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Random Number</title>
+  </head>
+  <body>
+    <h2>Guess Random Number</h2>
+    <script>
+      const max = prompt("Enter the maximum number ?");
+      const random = Math.floor(Math.random() * max) + 1;
+      // console.log(random);
+      let guess = prompt("Guess the random number ?");
+
+      while (true) {
+        if (guess === "quit") {
+          alert("You are Quitted !");
+          break;
+        }
+
+        if (guess == random) {
+          alert(`Congrats! You guess corrent number ${guess}.`);
+          break;
+        } else if (guess > random) {
+          guess = prompt("Number is greater than random value!");
+        } else if (guess < random) {
+          guess = prompt("Number is lesser than random value!");
+        } else {
+          alert("Invalid Input!");
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>
